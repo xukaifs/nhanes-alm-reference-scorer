@@ -1,0 +1,3 @@
+artifact,bytes,sha256,description
+frozen_full_source,20473059,7D803623F0E99AFBA98EC3052847A017070EA76341FAC830D96FD2234A32A97A,"Original frozen 10-model bundle retained outside the public repository"
+public_minimized,20015302,E035C36A3A5317A532380565416BA080A34DA4DBD057CB161C6CE3E1CC0B446E,"Public bundle with train_data limited to alm_kg, age, height_m, and w_model"

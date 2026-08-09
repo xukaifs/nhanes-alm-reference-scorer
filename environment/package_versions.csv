@@ -1,0 +1,6 @@
+package,required_version
+R,4.2.1
+gamlss,5.4-22
+gamlss.dist,6.1-1
+gamlss.data,6.0-7
+nlme,3.1-157

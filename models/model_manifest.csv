@@ -1,0 +1,11 @@
+model_key,imputation,sex,family,n,mu_formula,sigma_formula,nu_formula,tau_formula,global_deviance,df_fit,AIC,age_min,age_max,height_min_m,height_max_m
+imp1_Male,1,Male,BCT,5693,"alm_kg ~ pb(age, df = 3) + pb(height_m, df = 3)",~1,~1,~1,31830.28107251606,25.947000448971437,31882.175073414004,20,59,1.304,2.041
+imp1_Female,1,Female,BCCG,5504,"alm_kg ~ pb(age, df = 3) + pb(height_m, df = 3)",~1,~1,NA,28917.057415736417,11.015564368013944,28939.088544472444,20,59,1.3159999999999998,1.868
+imp2_Male,2,Male,BCT,5693,"alm_kg ~ pb(age, df = 3) + pb(height_m, df = 3)",~1,~1,~1,31840.224501713164,25.95461626443201,31892.13373424203,20,59,1.304,2.041
+imp2_Female,2,Female,BCCG,5504,"alm_kg ~ pb(age, df = 3) + pb(height_m, df = 3)",~1,~1,NA,28955.522752812027,10.974337136240095,28977.471427084507,20,59,1.3159999999999998,1.868
+imp3_Male,3,Male,BCT,5693,"alm_kg ~ pb(age, df = 3) + pb(height_m, df = 3)",~1,~1,~1,31833.123153592172,25.609255391225545,31884.341664374624,20,59,1.304,2.041
+imp3_Female,3,Female,BCCG,5504,"alm_kg ~ pb(age, df = 3) + pb(height_m, df = 3)",~1,~1,NA,28934.644759666746,11.00466923253732,28956.65409813182,20,59,1.3159999999999998,1.868
+imp4_Male,4,Male,BCT,5693,"alm_kg ~ pb(age, df = 3) + pb(height_m, df = 3)",~1,~1,~1,31811.411837097887,25.9882057836733,31863.388248665233,20,59,1.304,2.041
+imp4_Female,4,Female,BCCG,5504,"alm_kg ~ pb(age, df = 3) + pb(height_m, df = 3)",~1,~1,NA,28944.55979299732,11.006855426924552,28966.573503851167,20,59,1.3159999999999998,1.868
+imp5_Male,5,Male,BCT,5693,"alm_kg ~ pb(age, df = 3) + pb(height_m, df = 3)",~1,~1,~1,31794.421514074034,25.9837042020439,31846.388922478123,20,59,1.304,2.041
+imp5_Female,5,Female,BCCG,5504,"alm_kg ~ pb(age, df = 3) + pb(height_m, df = 3)",~1,~1,NA,28931.23693114133,11.000456918501628,28953.237844978335,20,59,1.3159999999999998,1.868

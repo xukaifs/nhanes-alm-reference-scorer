@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+title: "Age- and Height-Conditioned ALM Reference Scorer"
+version: "1.0.0"
+license: "MIT"
+type: software
+
+abstract: "Frozen R implementation and model objects for sex-specific, age- and height-conditioned reference centiles of DXA-derived appendicular lean mass in U.S. adults aged 20-59 years."
+
+message: "If you use this software, please cite this release and the accompanying manuscript."
+
+authors:
+  - family-names: "Sun"
+    given-names: "Xiaoqing"
+    affiliation: "Department of Radiology, Qingdao Municipal Hospital (Qingdao Hospital of University of Health and Rehabilitation Sciences), Qingdao, Shandong, China"
+
+  - family-names: "Han"
+    given-names: "Taoyang"
+    affiliation: "Science and Information College, Qingdao Agricultural University, Qingdao, Shandong, China"
+
+  - family-names: "Xu"
+    given-names: "Kai"
+    affiliation: "Department of Radiology, Qingdao Municipal Hospital (Qingdao Hospital of University of Health and Rehabilitation Sciences), Qingdao, Shandong, China"
+    orcid: "https://orcid.org/0000-0002-4654-1780"
+
+keywords:
+  - "appendicular lean mass"
+  - "DXA"
+  - "reference centiles"
+  - "GAMLSS"

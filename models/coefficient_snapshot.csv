@@ -1,0 +1,56 @@
+model_key,imputation,sex,family,parameter_component,coefficient,value
+imp1_Male,1,Male,BCT,mu.coefficients,(Intercept),-32.149901713999164
+imp1_Male,1,Male,BCT,mu.coefficients,"pb(age, df = 3)",-5.218809657613498e-4
+imp1_Male,1,Male,BCT,mu.coefficients,"pb(height_m, df = 3)",33.4192942733166
+imp1_Male,1,Male,BCT,sigma.coefficients,(Intercept),-2.0104458239185936
+imp1_Male,1,Male,BCT,nu.coefficients,(Intercept),-0.45385466743484815
+imp1_Male,1,Male,BCT,tau.coefficients,(Intercept),2.4140265814655746
+imp1_Female,1,Female,BCCG,mu.coefficients,(Intercept),-19.103472202850504
+imp1_Female,1,Female,BCCG,mu.coefficients,"pb(age, df = 3)",0.00239158993719912
+imp1_Female,1,Female,BCCG,mu.coefficients,"pb(height_m, df = 3)",22.443193112563808
+imp1_Female,1,Female,BCCG,sigma.coefficients,(Intercept),-1.6820641199929403
+imp1_Female,1,Female,BCCG,nu.coefficients,(Intercept),-0.8449857699926294
+imp2_Male,2,Male,BCT,mu.coefficients,(Intercept),-31.781533871239038
+imp2_Male,2,Male,BCT,mu.coefficients,"pb(age, df = 3)",-5.148207297366123e-4
+imp2_Male,2,Male,BCT,mu.coefficients,"pb(height_m, df = 3)",33.20866851858544
+imp2_Male,2,Male,BCT,sigma.coefficients,(Intercept),-2.011225263596139
+imp2_Male,2,Male,BCT,nu.coefficients,(Intercept),-0.468616826020654
+imp2_Male,2,Male,BCT,tau.coefficients,(Intercept),2.3997779901281215
+imp2_Female,2,Female,BCCG,mu.coefficients,(Intercept),-19.169478209197344
+imp2_Female,2,Female,BCCG,mu.coefficients,"pb(age, df = 3)",-0.0013237533215056008
+imp2_Female,2,Female,BCCG,mu.coefficients,"pb(height_m, df = 3)",22.585900921168992
+imp2_Female,2,Female,BCCG,sigma.coefficients,(Intercept),-1.678512796681075
+imp2_Female,2,Female,BCCG,nu.coefficients,(Intercept),-0.8197928257967422
+imp3_Male,3,Male,BCT,mu.coefficients,(Intercept),-31.94442558779747
+imp3_Male,3,Male,BCT,mu.coefficients,"pb(age, df = 3)",-2.4429107242459935e-4
+imp3_Male,3,Male,BCT,mu.coefficients,"pb(height_m, df = 3)",33.29577951204804
+imp3_Male,3,Male,BCT,sigma.coefficients,(Intercept),-2.011398630076094
+imp3_Male,3,Male,BCT,nu.coefficients,(Intercept),-0.41387647357873275
+imp3_Male,3,Male,BCT,tau.coefficients,(Intercept),2.3924205707968302
+imp3_Female,3,Female,BCCG,mu.coefficients,(Intercept),-19.00969392806298
+imp3_Female,3,Female,BCCG,mu.coefficients,"pb(age, df = 3)",-6.250042636652129e-5
+imp3_Female,3,Female,BCCG,mu.coefficients,"pb(height_m, df = 3)",22.444327690542337
+imp3_Female,3,Female,BCCG,sigma.coefficients,(Intercept),-1.6813020526728064
+imp3_Female,3,Female,BCCG,nu.coefficients,(Intercept),-0.8631768295108824
+imp4_Male,4,Male,BCT,mu.coefficients,(Intercept),-31.741422176552437
+imp4_Male,4,Male,BCT,mu.coefficients,"pb(age, df = 3)",-3.669327162098214e-4
+imp4_Male,4,Male,BCT,mu.coefficients,"pb(height_m, df = 3)",33.19400353133997
+imp4_Male,4,Male,BCT,sigma.coefficients,(Intercept),-2.0103856524572032
+imp4_Male,4,Male,BCT,nu.coefficients,(Intercept),-0.37048816335980744
+imp4_Male,4,Male,BCT,tau.coefficients,(Intercept),2.422011318238197
+imp4_Female,4,Female,BCCG,mu.coefficients,(Intercept),-19.018855020828553
+imp4_Female,4,Female,BCCG,mu.coefficients,"pb(age, df = 3)",-0.001241933106812142
+imp4_Female,4,Female,BCCG,mu.coefficients,"pb(height_m, df = 3)",22.486921772980693
+imp4_Female,4,Female,BCCG,sigma.coefficients,(Intercept),-1.680237604111649
+imp4_Female,4,Female,BCCG,nu.coefficients,(Intercept),-0.8431266554403839
+imp5_Male,5,Male,BCT,mu.coefficients,(Intercept),-32.09679695679406
+imp5_Male,5,Male,BCT,mu.coefficients,"pb(age, df = 3)",-1.8034282478917546e-4
+imp5_Male,5,Male,BCT,mu.coefficients,"pb(height_m, df = 3)",33.3893780427699
+imp5_Male,5,Male,BCT,sigma.coefficients,(Intercept),-2.0148283823137185
+imp5_Male,5,Male,BCT,nu.coefficients,(Intercept),-0.4029259538056064
+imp5_Male,5,Male,BCT,tau.coefficients,(Intercept),2.394686055557399
+imp5_Female,5,Female,BCCG,mu.coefficients,(Intercept),-19.29849972903059
+imp5_Female,5,Female,BCCG,mu.coefficients,"pb(age, df = 3)",0.001390325000546323
+imp5_Female,5,Female,BCCG,mu.coefficients,"pb(height_m, df = 3)",22.60238683584196
+imp5_Female,5,Female,BCCG,sigma.coefficients,(Intercept),-1.6797805991944534
+imp5_Female,5,Female,BCCG,nu.coefficients,(Intercept),-0.7951192312882486
