@@ -146,14 +146,14 @@ quantities.
 
 ## Citation and archive
 
-Use the metadata in `CITATION.cff` when citing this software. For an archived
-release, use the version-specific DOI displayed on the corresponding Zenodo
-record. The accompanying manuscript should also be cited when available.
+Use the metadata in `CITATION.cff` when citing this software. Version 1.0.0 is permanently 
+archived on Zenodo with the version-specific DOI **10.5281/zenodo.21882160**. 
+Please also cite the accompanying manuscript when available.
 
-- GitHub repository:
-  <https://github.com/xukaifs/nhanes-alm-reference-scorer>
+- GitHub repository: https://github.com/xukaifs/nhanes-alm-reference-scorer
+- Zenodo archive: https://doi.org/10.5281/zenodo.21882160
 - Version: `1.0.0`
-- Release date: 2026-08-06
+- Release date: 2026-08-09
 
 ## License
 
