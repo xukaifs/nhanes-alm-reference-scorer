@@ -1,15 +1,13 @@
 Creative Commons Attribution 4.0 International (CC BY 4.0)
 
-The fitted model objects, reference grids, worked-example outputs,
-documentation, and other data/model artifacts in this repository are licensed
-under the Creative Commons Attribution 4.0 International License.
+Repository-authored model metadata, documentation, derived release tables, and
+other original non-code artifacts are licensed under CC BY 4.0 unless stated
+otherwise. Code is covered by the MIT License in LICENSE.
 
-You are free to share and adapt these materials for any purpose, provided that
-appropriate credit is given, a link to the license is supplied, and changes
-are indicated. No additional restrictions may be applied.
+This repository license does not replace or relicense the original NHANES
+public-use source data or any public-use fields retained inside fitted R model
+objects. Those source-derived elements remain subject to the terms and
+documentation of the U.S. National Center for Health Statistics / NHANES.
 
-License text and terms:
+License text and terms for repository-authored CC BY material:
 https://creativecommons.org/licenses/by/4.0/legalcode
-
-This license does not alter the terms governing the original NHANES public-use
-source data, which are not redistributed in this repository.

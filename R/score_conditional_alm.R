@@ -7,14 +7,16 @@ suppressWarnings(
   })
 )
 
-# Sex-specific observed and recommended-use domains in the NHANES 1999-2006
-# development sample. Recommended height limits are the empirical
-# (unweighted) 1st-99th percentile range; values between the recommended and
-# observed limits are scored but flagged as extrapolation-prone.
+# Scoring domain for the final corrected-weight 18-69 models.
+# Age bounds match the final development domain. Height and ALM guardrails are
+# deliberately conservative: they retain the v1.0.0 20-59 observed and central
+# reference ranges, which are guaranteed to lie within the expanded 18-69
+# development sample. They prevent unsupported extrapolation until a fully
+# regenerated 18-69 empirical boundary table is archived.
 alm_reference_domain <- data.frame(
   sex = c("Female", "Male"),
-  age_min = c(20, 20),
-  age_max = c(59, 59),
+  age_min = c(18, 18),
+  age_max = c(69, 69),
   height_observed_min_m = c(1.316, 1.304),
   height_observed_max_m = c(1.868, 2.041),
   height_recommended_min_m = c(1.458, 1.570),
@@ -142,25 +144,50 @@ validate_reference_bundles <- function(bundles) {
   invisible(metadata)
 }
 
-find_reference_model_file <- function(model_path = NULL) {
-  candidates <- unique(c(
-    model_path,
-    file.path("models", "revised_primary_model_bundles.rds")
-  ))
-  candidates <- candidates[!is.na(candidates) & nzchar(candidates)]
-  hit <- candidates[file.exists(candidates)]
-  if (length(hit) == 0) {
+find_reference_model_files <- function(model_path = NULL) {
+  if (!is.null(model_path)) {
+    model_path <- as.character(model_path)
+    if (length(model_path) == 1L && dir.exists(model_path)) {
+      model_path <- file.path(
+        model_path,
+        c(
+          "corrected_H_18_69_Female_bundles.rds",
+          "corrected_H_18_69_Male_bundles.rds"
+        )
+      )
+    }
+    if (!all(file.exists(model_path))) {
+      stop("One or more supplied reference-model files do not exist.", call. = FALSE)
+    }
+    return(normalizePath(model_path, winslash = "/", mustWork = TRUE))
+  }
+
+  defaults <- file.path(
+    "models",
+    c(
+      "corrected_H_18_69_Female_bundles.rds",
+      "corrected_H_18_69_Male_bundles.rds"
+    )
+  )
+  if (!all(file.exists(defaults))) {
     stop(
-      "Reference-model file not found. Supply model_path explicitly or run ",
-      "from the package root.",
+      "Final 18-69 reference-model files were not found. Run from the ",
+      "repository root or supply model_path explicitly.",
       call. = FALSE
     )
   }
-  normalizePath(hit[1], winslash = "/", mustWork = TRUE)
+  normalizePath(defaults, winslash = "/", mustWork = TRUE)
 }
 
 load_alm_reference <- function(model_path = NULL) {
-  bundles <- readRDS(find_reference_model_file(model_path))
+  files <- find_reference_model_files(model_path)
+  objects <- lapply(files, readRDS)
+  bundles <- do.call(c, objects)
+  names(bundles) <- vapply(
+    bundles,
+    function(bundle) paste0("imp", bundle$imputation, "_", bundle$sex),
+    character(1)
+  )
   validate_reference_bundles(bundles)
   bundles
 }
@@ -306,7 +333,7 @@ validate_alm_input <- function(input) {
 #
 # Required input columns:
 #   sex: "Male" or "Female"
-#   age: completed years (20-59)
+#   age: completed years (18-69)
 #   height_m: standing height in metres
 #   alm_kg: DXA appendicular lean mass in kilograms
 #

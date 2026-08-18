@@ -1,11 +1,11 @@
-model_key,imputation,sex,family,n,mu_formula,sigma_formula,nu_formula,tau_formula,global_deviance,df_fit,AIC,age_min,age_max,height_min_m,height_max_m
-imp1_Male,1,Male,BCT,5693,"alm_kg ~ pb(age, df = 3) + pb(height_m, df = 3)",~1,~1,~1,31830.28107251606,25.947000448971437,31882.175073414004,20,59,1.304,2.041
-imp1_Female,1,Female,BCCG,5504,"alm_kg ~ pb(age, df = 3) + pb(height_m, df = 3)",~1,~1,NA,28917.057415736417,11.015564368013944,28939.088544472444,20,59,1.3159999999999998,1.868
-imp2_Male,2,Male,BCT,5693,"alm_kg ~ pb(age, df = 3) + pb(height_m, df = 3)",~1,~1,~1,31840.224501713164,25.95461626443201,31892.13373424203,20,59,1.304,2.041
-imp2_Female,2,Female,BCCG,5504,"alm_kg ~ pb(age, df = 3) + pb(height_m, df = 3)",~1,~1,NA,28955.522752812027,10.974337136240095,28977.471427084507,20,59,1.3159999999999998,1.868
-imp3_Male,3,Male,BCT,5693,"alm_kg ~ pb(age, df = 3) + pb(height_m, df = 3)",~1,~1,~1,31833.123153592172,25.609255391225545,31884.341664374624,20,59,1.304,2.041
-imp3_Female,3,Female,BCCG,5504,"alm_kg ~ pb(age, df = 3) + pb(height_m, df = 3)",~1,~1,NA,28934.644759666746,11.00466923253732,28956.65409813182,20,59,1.3159999999999998,1.868
-imp4_Male,4,Male,BCT,5693,"alm_kg ~ pb(age, df = 3) + pb(height_m, df = 3)",~1,~1,~1,31811.411837097887,25.9882057836733,31863.388248665233,20,59,1.304,2.041
-imp4_Female,4,Female,BCCG,5504,"alm_kg ~ pb(age, df = 3) + pb(height_m, df = 3)",~1,~1,NA,28944.55979299732,11.006855426924552,28966.573503851167,20,59,1.3159999999999998,1.868
-imp5_Male,5,Male,BCT,5693,"alm_kg ~ pb(age, df = 3) + pb(height_m, df = 3)",~1,~1,~1,31794.421514074034,25.9837042020439,31846.388922478123,20,59,1.304,2.041
-imp5_Female,5,Female,BCCG,5504,"alm_kg ~ pb(age, df = 3) + pb(height_m, df = 3)",~1,~1,NA,28931.23693114133,11.000456918501628,28953.237844978335,20,59,1.3159999999999998,1.868
+model_key,imputation,sex,family,n,mu_formula,sigma_formula,nu_formula,tau_formula,converged,iterations,effective_df,global_deviance,AIC,BIC,attempt,age_min,age_max,height_df,weighting
+imp1_Female,1,Female,BCCG,7890,"alm_kg ~ pb(age, df = 3) + pb(height_m, df = 3)",~1,~1,,True,6,10.999981048804717,41173.050802744605,41195.05076484221,41271.75749824111,1,18,69,3,corrected pooled MEC weight; centered within sex for GAMLSS fitting
+imp2_Female,2,Female,BCCG,7890,"alm_kg ~ pb(age, df = 3) + pb(height_m, df = 3)",~1,~1,,True,6,11.000000040656992,41205.21666033065,41227.21666041196,41303.92352624772,1,18,69,3,corrected pooled MEC weight; centered within sex for GAMLSS fitting
+imp3_Female,3,Female,BCCG,7890,"alm_kg ~ pb(age, df = 3) + pb(height_m, df = 3)",~1,~1,,True,6,11.000011706727904,41191.866079513726,41213.86610292718,41290.57305011455,1,18,69,3,corrected pooled MEC weight; centered within sex for GAMLSS fitting
+imp4_Female,4,Female,BCCG,7890,"alm_kg ~ pb(age, df = 3) + pb(height_m, df = 3)",~1,~1,,True,6,10.999991300741158,41208.54856592952,41230.548548531,41307.255353420245,1,18,69,3,corrected pooled MEC weight; centered within sex for GAMLSS fitting
+imp5_Female,5,Female,BCCG,7890,"alm_kg ~ pb(age, df = 3) + pb(height_m, df = 3)",~1,~1,,True,6,11.000004937237614,41184.56592215898,41206.56593203346,41283.27283201479,1,18,69,3,corrected pooled MEC weight; centered within sex for GAMLSS fitting
+imp1_Male,1,Male,BCT,8128,"alm_kg ~ pb(age, df = 3) + pb(height_m, df = 3)",~1,~1,~1,True,7,25.908468721189905,45189.5480929031,45241.36503034548,45422.80385479251,1,18,69,3,corrected pooled MEC weight; centered within sex for GAMLSS fitting
+imp2_Male,2,Male,BCT,8128,"alm_kg ~ pb(age, df = 3) + pb(height_m, df = 3)",~1,~1,~1,True,6,25.90559638993117,45180.16985502922,45231.98104780908,45413.399757118765,1,18,69,3,corrected pooled MEC weight; centered within sex for GAMLSS fitting
+imp3_Male,3,Male,BCT,8128,"alm_kg ~ pb(age, df = 3) + pb(height_m, df = 3)",~1,~1,~1,True,6,25.985659648012707,45194.6101291671,45246.58144846313,45428.560846387176,1,18,69,3,corrected pooled MEC weight; centered within sex for GAMLSS fitting
+imp4_Male,4,Male,BCT,8128,"alm_kg ~ pb(age, df = 3) + pb(height_m, df = 3)",~1,~1,~1,True,7,25.737061215783427,45148.07229785097,45199.54642028254,45379.784865941576,1,18,69,3,corrected pooled MEC weight; centered within sex for GAMLSS fitting
+imp5_Male,5,Male,BCT,8128,"alm_kg ~ pb(age, df = 3) + pb(height_m, df = 3)",~1,~1,~1,True,6,25.99576310891241,45142.07480748536,45194.06633370319,45376.11648687288,1,18,69,3,corrected pooled MEC weight; centered within sex for GAMLSS fitting
