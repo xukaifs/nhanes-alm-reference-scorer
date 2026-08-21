@@ -30,4 +30,14 @@ bad <- score_conditional_alm(data.frame(
 ),bundles=bundles,warn=FALSE)$pooled
 stopifnot(all(!bad$score_valid), all(is.na(bad$model_averaged_z)))
 
-message("v2.0.0 structural and live-scoring tests passed.")
+
+analysis_script <- file.path("analysis", "age_only_vs_age_height_comparator.R")
+expected_file <- file.path("analysis", "expected", "age_only_vs_age_height_expected.csv")
+stopifnot(file.exists(analysis_script), file.exists(expected_file))
+expected <- read.csv(expected_file, check.names = FALSE)
+stopifnot(nrow(expected) == 12)
+stopifnot(all(c("sex", "metric", "age_only", "age_height") %in% names(expected)))
+stopifnot(any(expected$metric == "Continuous z beta per 10 cm"))
+stopifnot(any(expected$metric == "P5 reclassification"))
+
+message("v2.1.0 structural and live-scoring tests passed.")

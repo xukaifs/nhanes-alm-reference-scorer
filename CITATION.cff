@@ -14,13 +14,14 @@ authors:
     email: "xukaifs@163.com"
     orcid: "https://orcid.org/0000-0002-4654-1780"
     affiliation: "Department of Radiology, Qingdao Hospital, University of Health and Rehabilitation Sciences (Qingdao Municipal Hospital), Qingdao, Shandong, China"
-version: "2.0.0"
-date-released: "2026-08-18"
+version: "2.1.0"
+date-released: "2026-08-20"
 repository-code: "https://github.com/xukaifs/nhanes-alm-reference-scorer"
 abstract: >-
   Frozen R implementation and final corrected-weight GAMLSS model objects for
   sex-specific, age- and height-conditioned reference scoring of DXA-derived
-  appendicular lean mass in U.S. adults aged 18-69 years.
+  appendicular lean mass in U.S. adults aged 18-69 years, with reproducibility
+  code for the manuscript age-only versus age+height sensitivity analysis.
 keywords:
   - appendicular lean mass
   - DXA
