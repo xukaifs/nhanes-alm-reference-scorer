@@ -15,7 +15,7 @@ authors:
     orcid: "https://orcid.org/0000-0002-4654-1780"
     affiliation: "Department of Radiology, Qingdao Hospital, University of Health and Rehabilitation Sciences (Qingdao Municipal Hospital), Qingdao, Shandong, China"
 version: "2.1.0"
-date-released: "2026-08-20"
+date-released: "2026-08-21"
 repository-code: "https://github.com/xukaifs/nhanes-alm-reference-scorer"
 abstract: >-
   Frozen R implementation and final corrected-weight GAMLSS model objects for
