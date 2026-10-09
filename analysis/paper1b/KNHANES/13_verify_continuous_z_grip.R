@@ -1,0 +1,25 @@
+# -*- coding: UTF-8 -*-
+options(stringsAsFactors=FALSE)
+invisible(Sys.setlocale("LC_ALL","English_United States.utf8"))
+root <- "D:/DXA\u8eab\u4f53\u6210\u5206\u5206\u6790/R\u5206\u6790\u7ed3\u679c/KNHANES_external_validation_20260904"
+out <- file.path(root,"tables_2024")
+checks <- list(); add <- function(name,ok,detail="") checks[[length(checks)+1L]] <<- data.frame(check=name,pass=isTRUE(ok),detail=detail)
+main <- read.csv(file.path(out,"14_continuous_z_grip_models.csv"))
+interaction <- read.csv(file.path(out,"15_z_sex_interaction.csv"))
+sex <- read.csv(file.path(out,"15b_sex_specific_slopes_if_interaction.csv"))
+centered <- read.csv(file.path(out,"16_korea_centered_z_sensitivity.csv"))
+nonlinear <- read.csv(file.path(out,"17_continuous_z_nonlinearity_test.csv"))
+add("Requested seven main models present",nrow(main)==7,paste("rows=",nrow(main)))
+add("Combined-grip model N is 2317",all(main$n[main$outcome=="Bilateral combined grip"]==2317))
+add("Max-single-hand model N is 2375",all(main$n[main$outcome=="Max single-hand grip"]==2375))
+add("All continuous-z slopes are positive with finite CI",all(is.finite(main$beta_per_1z)&is.finite(main$lcl)&is.finite(main$ucl)&main$lcl>0))
+add("Both M3 sex interactions tested",nrow(interaction)==2&&all(is.finite(interaction$p_interaction)))
+add("Significant interactions trigger four sex-specific slopes",all(interaction$p_interaction<.05)&&nrow(sex)==4,paste("P=",paste(signif(interaction$p_interaction,3),collapse=",")))
+add("All sex-specific slopes are positive",all(sex$lcl>0))
+add("Sex-centered M3 slope is numerically identical",max(abs(centered$slope_difference_from_raw))<1e-10,
+    paste("max difference=",format(max(abs(centered$slope_difference_from_raw)),scientific=TRUE)))
+add("Nonlinearity test available and finite",nrow(nonlinear)==1&&is.finite(nonlinear$nonlinearity_p),paste("P=",signif(nonlinear$nonlinearity_p,4)))
+add("Spline basis has expected 2 nonlinear df",nonlinear$nonlinearity_df_num==2)
+res <- do.call(rbind,checks); write.csv(res,file.path(out,"18_continuous_z_grip_verification.csv"),row.names=FALSE)
+if(!all(res$pass)){print(res,row.names=FALSE);stop("Continuous-z grip verification failed")}
+cat("ALL CONTINUOUS-Z GRIP CHECKS PASSED (",nrow(res)," checks).\n",sep="");print(res,row.names=FALSE)

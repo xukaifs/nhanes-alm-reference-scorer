@@ -1,0 +1,5 @@
+"year","dxa_n","matched_all_n","valid_four_limb_ln_n","valid_four_limb_bmc_n","valid_four_limb_ln_alm_n","valid_height_n","valid_bmi_n","age_19_69_alm_height_n","age_19_69_core_design_n","male_core_n","female_core_n","age_19_59_core_design_n","scorer_domain_valid_n","scorer_caution_n","final_common_analytic_19_69_n"
+2008,3583,3583,3513,3394,3513,3567,3566,3044,3043,1280,1763,2472,3042,90,3041
+2009,7920,7920,7739,7733,7739,7918,7917,6103,6102,2666,3436,4955,6103,210,6102
+2010,7043,7043,6879,6870,6879,7038,7034,5107,5104,2202,2902,4114,5106,176,5103
+2011,2757,2757,2707,2706,2707,2757,2755,1982,1980,838,1142,1559,1982,54,1980
