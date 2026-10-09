@@ -1,0 +1,3 @@
+"outcome","model","exposure","n","beta_per_1z","se","lcl","ucl","p_value","sex_weighted_mean_female","sex_weighted_mean_male","slope_difference_from_raw"
+"Bilateral combined grip","M3","conditional z",2317,5.49782815242996,0.620075596528915,4.2825023155411,6.71315398931882,7.5559793526487e-19,-1.05881579494796,-0.87135639683276,0
+"Bilateral combined grip","M3","sex-centered conditional z",2317,5.49782815242996,0.620075596528915,4.28250231554109,6.71315398931882,7.55597935264919e-19,-1.05881579494796,-0.87135639683276,-5.32907051820075e-15

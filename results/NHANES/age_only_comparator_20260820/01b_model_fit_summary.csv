@@ -1,0 +1,5 @@
+sex,model,family,mu_formula,weight_version,imputations,all_converged,total_BIC,mean_BIC,mean_effective_df,delta_total_BIC_vs_age_height
+Female,Age+height,BCCG,"pb(age,df=3,inter=10)+pb(height,df=3,inter=10)",Corrected pooled development weights,5,TRUE,206456.7822600384,41291.35645200768,10.999997806833678,0
+Female,Age-only,BCCG,"pb(age,df=3,inter=10)",Corrected pooled development weights,5,TRUE,214369.5883967183,42873.917679343656,7.000000040364132,7912.806136679894
+Male,Age+height,BCT,"pb(age,df=3)+pb(height,df=3)",Corrected pooled development weights,5,TRUE,227020.6658111129,45404.13316222258,25.906509816765922,0
+Male,Age-only,BCT,"pb(age,df=3)",Corrected pooled development weights,5,TRUE,241889.78735179536,48377.95747035907,7.999990434983022,14869.121540682449

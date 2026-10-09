@@ -1,83 +1,80 @@
-# Age- and height-conditioned ALM reference scorer
+# Age- and height-conditioned ALM reference scorer — v2.2.0
 
-This repository contains the frozen **Version 2.1.0** research implementation
-of sex-specific, age- and height-conditioned reference scoring for DXA-derived
-appendicular lean mass (ALM) in U.S. adults aged **18–69 years**.
+**Release date: 2026-10-09**
 
-Version 2.1.0 retains the exact final corrected-weight primary H scorer and model
-objects from v2.0.0 and adds the manuscript age-only versus age+height sensitivity
-analysis for reproducibility. No primary scoring coefficients, model specifications,
-or public scoring behavior changed from v2.0.0. Archived earlier releases remain
-unchanged.
+This repository accompanies Paper 1B on DXA-derived appendicular lean mass (ALM) normalization, frozen temporal validation, and cross-population replication in U.S. NHANES and Korean KNHANES.
 
-## Final model definition
+## What v2.2.0 adds
 
-- Development source: NHANES 1999–2006 completed DXA datasets.
-- Development n: 16,018 (7,890 women; 8,128 men).
-- Five completed DXA datasets are fitted separately for each sex.
+Version 2.2.0 extends the existing public repository without changing the primary frozen U.S. age- and height-conditioned scorer introduced in v2.0.0. It also retains the age-only comparator reproducibility resources added in v2.1.0.
+
+New Paper 1B reproducibility resources include:
+
+- frozen temporal validation in NHANES 2011–2018;
+- external replication in KNHANES 2008–2011 and KNHANES 2024;
+- FNIH ALM/BMI and EWGSOP2 ALM/height² comparator analyses;
+- cross-population calibration summaries and Korean mirrored-refit analyses;
+- grip-strength contextual analyses;
+- aggregate manuscript-verification outputs and audit files.
+
+The central methodological distinction is between **structural transportability** (whether stature-related behavior of the frozen model replicates) and **percentile calibration/interchangeability** (whether U.S.-derived percentile positions can be transferred directly to Korea).
+
+## Version lineage
+
+- **v2.0.0** — final frozen 18–69-year age+height scorer and model objects.
+- **v2.1.0** — age-only versus age+height comparator reproducibility resources.
+- **v2.2.0** — Paper 1B temporal validation, Korean external replication, calibration, mirrored-refit, and grip-strength resources.
+
+## Primary U.S. reference specification
+
+- Development data: NHANES 1999–2006 completed DXA datasets.
+- Development sample: 16,018 adults (7,890 women; 8,128 men), ages 18–69 years.
 - Women: BCCG; age df=3; height df=3; constant sigma.
 - Men: BCT; age df=3; height df=3; constant sigma.
-- Primary reference domain: ages 18–69 years.
-- Fitting uses the corrected pooled MEC examination weights, centered within sex
-  for numerical fitting.
-- The public scoring target is absolute ALM conditional on sex, age, and stature;
-  BMI is not a conditioning variable in the primary H model.
+- Five completed DXA datasets are fitted separately by sex.
+- The scoring target is absolute ALM conditional on sex, age, and stature; BMI is not a conditioning variable in the primary model.
+- Conditional P5/P10 are population-reference positions, not stand-alone sarcopenia diagnoses or outcome-derived decision limits.
 
-The supplied full-fit audit files show convergence for all five female BCCG
-models and all five male BCT models.
-
-## Frozen scoring definition
-
-For each person, the scorer obtains a percentile and z score from each of the
-five imputation-specific models of the same sex, then reports arithmetic model
-averages separately on the two scales:
+## Repository layout
 
 ```text
-model_averaged_z = mean(z_m)
-model_averaged_percentile = mean(percentile_m)
+R/                              scoring functions
+models/                         frozen model files, metadata, provenance, and audit tables
+analysis/paper1b/NHANES/        archived U.S. analysis scripts
+analysis/paper1b/KNHANES/       archived Korean analysis scripts
+analysis/reference/             controlled age-only comparator materials
+results/NHANES/                 aggregate U.S. outputs
+results/KNHANES/                aggregate Korean outputs
+environment/                    recorded R environment information
+examples/                       minimal scorer usage example
+tests/                          scorer/release checks
+tools/                          helper scripts
+docs/                           data access and reproducibility notes
 ```
 
-These are distinct model-averaged summaries. Do not replace the formal z score
-with `qnorm(model_averaged_percentile)` or the formal percentile with
-`pnorm(model_averaged_z)`.
+## Important: preserve the existing frozen model files
 
-## Repository contents
+The public GitHub `main` branch already contains the two final 18–69-year frozen GAMLSS model bundles. They are unchanged in v2.2.0 and should **not** be deleted or replaced when merging this update package:
 
-- `R/score_conditional_alm.R` — scoring and centile functions.
-- `models/corrected_H_18_69_Female_bundles.rds` — five final female models.
-- `models/corrected_H_18_69_Male_bundles.rds` — five final male models.
-- `models/model_manifest.csv` — final model specifications and fit diagnostics.
-- `models/model_provenance.csv` — hashes of the frozen model artifacts.
-- `models/audit/` — supplied full-fit audit tables.
-- `logs/` — primary H and H/HB sensitivity fit/CV logs.
-- `data/valid_input_ranges.csv` — conservative release guardrails.
-- `examples/example_usage.R` — minimal scoring example.
-- `analysis/age_only_vs_age_height_comparator.R` — controlled manuscript
-  sensitivity analysis comparing an otherwise identical age-only reference with
-  the frozen age+height reference.
-- `analysis/expected/age_only_vs_age_height_expected.csv` — archived manuscript-level
-  results for rerun auditing.
-- `analysis/README.md` — input contract and reproduction instructions for the
-  age-only sensitivity analysis.
-- `tools/build_reference_grid.R` — regenerate an age-height centile grid directly
-  from the frozen v2.x models.
-- `tests/run_release_tests.R` — structural and live-scoring checks.
-- `environment/` and `renv.lock` — recorded v1/final-project R environment.
-- `CITATION.cff`, `LICENSE`, `DATA_LICENSE`, `PROVENANCE.md` — citation,
-  licensing, and provenance metadata.
-- `RELEASE_FILE_SHA256.csv` — SHA-256 manifest for release files.
+- `models/corrected_H_18_69_Female_bundles.rds`
+- `models/corrected_H_18_69_Male_bundles.rds`
 
-### Why the v1.0.0 reference grid is not copied forward
+Expected SHA-256 values recorded in `models/model_provenance.csv`:
 
-The v1.0.0 precomputed grid and fixed worked-example outputs were based on the
-older 20–59-year frozen models. They are intentionally **not** carried into
-v2.1.0. A new grid should be generated from the unchanged final age-height
-models retained in v2.1.0 with `tools/build_reference_grid.R`; this avoids mixing
-old derived numbers with the current frozen model objects.
+- Female: `B2FA1530C23DC16C2F7D48D4A56D533C3B6B49CDC76E6B45D74BC56008E095BD`
+- Male: `A11A01B43D5C4C4922566990144612D814927D1BC6518ED4DCA7082F4FE6C8BA`
 
-## Minimal use
+This handoff ZIP does not duplicate those large binary files. Merge the extracted contents into the existing repository and preserve the current `models/*.rds` files.
 
-Run from the repository root:
+## Reproducibility
+
+The analysis scripts are archived from the analysis workspace to preserve provenance. Several scripts contain historical local Windows paths and R-library paths. They are not silently rewritten here because doing so would create unvalidated code changes. Configure local paths before rerunning. See `docs/REPRODUCIBILITY.md`.
+
+Participant-level NHANES and KNHANES data are not redistributed. Users should obtain the public-use source data from the official NCHS and KDCA portals under their respective terms of use. Only source code, model metadata, and aggregate/verification outputs are included here.
+
+## Minimal scorer use
+
+With the existing verified model bundles retained under `models/`:
 
 ```r
 source("R/score_conditional_alm.R")
@@ -94,75 +91,20 @@ patients <- data.frame(
 score_conditional_alm(patients, bundles = models)$pooled
 ```
 
-Create centiles at selected age-height points:
+## Intended use
 
-```r
-reference_centiles(
-  data.frame(
-    sex = c("Female", "Male"),
-    age = c(45, 60),
-    height_m = c(1.60, 1.75)
-  ),
-  bundles = models
-)
-```
-
-## Intended use and boundaries
-
-- Research standardization only; this is not a stand-alone diagnostic tool.
-- Final model age domain: 18–69 years.
-- The release uses conservative height guardrails retained from v1.0.0; these
-  ranges lie within the expanded development sample and reduce extrapolation.
-- Values within the guard range but outside the recommended central range are
-  scoreable but flagged for caution.
-- ALM must be positive. The stored ALM caution range is conservative and is not
-  a diagnostic boundary.
-- The models were developed from U.S. NHANES Hologic DXA data.
-- Calibration should be assessed before use with other scanner systems,
-  software versions, countries, or clinical populations.
-- Subgroup calibration offsets should not be interpreted as fixed biological
-  norms.
-- Conditional P5/P10 are population-reference positions, not outcome-derived
-  sarcopenia decision limits.
-
-## Manuscript age-only sensitivity
-
-Version 2.1.0 adds a controlled age-only comparator used in the revised manuscript.
-The comparator removes height from the GAMLSS location predictor while keeping the
-sex-specific family, age smooth, scale/shape structure, corrected development
-weights, completed DXA datasets, and deterministic PSU folds fixed. It is not a
-replacement scorer and does not reproduce any specific published age-only model.
-
-Run `analysis/age_only_vs_age_height_comparator.R` with the analysis-ready NHANES
-2011-2018 validation file generated by the archived manuscript pipeline.
-Participant-level validation data are not redistributed in this software release;
-see `analysis/README.md` for the required variables and expected results.
-
-## Reproducibility and public-use data note
-
-The RDS files retained in v2.1.0 are the exact final corrected-weight fit
-objects carried forward unchanged from v2.0.0. Unlike the minimized v1.0.0 public bundle,
-they were **not post-processed** in this environment. Their explicit training
-frames retain public-use NHANES analysis fields used during fitting. See
-`PROVENANCE.md` before public redistribution. The scoring results themselves do
-not require users to access raw NHANES source files separately.
-
-The recorded environment is R 4.2.1 with `gamlss` 5.4-22, `gamlss.dist` 6.1-1,
-`gamlss.data` 6.0-7, and `nlme` 3.1-157. Run
-`environment/verify_environment.R` for an exact version check.
+This software is for research standardization and reproducibility. It is not a stand-alone diagnostic tool. Calibration should be assessed before use with other scanner systems, software versions, countries, or clinical populations.
 
 ## Citation and archive
 
-Use `CITATION.cff` when citing the software. Create the GitHub tag/release
-`v2.1.0`, allow Zenodo to archive that release, and then use the
-version-specific Zenodo DOI for the manuscript's Code availability statement.
+Repository: https://github.com/xukaifs/nhanes-alm-reference-scorer
 
-- Repository: https://github.com/xukaifs/nhanes-alm-reference-scorer
-- Version: `2.1.0`
-- Release date: 2026-08-20
+Version: `2.2.0`
+
+Release date: **2026-10-09**
+
+After the GitHub `v2.2.0` release is archived by Zenodo, use the **version-specific Zenodo DOI** in the Paper 1B manuscript. Do not insert a DOI until Zenodo has created the v2.2.0 record.
 
 ## License
 
-Code is released under the MIT License. Repository-authored documentation and
-model metadata are covered by `DATA_LICENSE`. Original NHANES public-use terms
-are not replaced by the repository license; see `PROVENANCE.md`.
+Code is released under the MIT License. Repository-authored documentation and model metadata are covered by `DATA_LICENSE`. Original NHANES and KNHANES data remain subject to their source terms and are not redistributed here.

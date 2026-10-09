@@ -1,0 +1,6 @@
+definition_order,definition,outcome,normalization,cutoff_text,analysis_domain,survey_design,weight_source_for_ALM_weight
+1,Conditional H P5,low_conditional_p5,ALM | age + height,Percentile < 5,"NHANES 2011-2018, age 18-59",WTMEC pooled weight + cycle-nested strata/PSU,Measured weight from temporal-validation source files: weight_kg
+2,EWGSOP2 low ALMI,low_ewgsop2_recalc,ALM / height^2,Men <7.0 kg/m^2; women <5.5 kg/m^2,"NHANES 2011-2018, age 18-59",WTMEC pooled weight + cycle-nested strata/PSU,Measured weight from temporal-validation source files: weight_kg
+3,FNIH low ALM/BMI,low_fnih_recalc,ALM / BMI,Men <0.789; women <0.512,"NHANES 2011-2018, age 18-59",WTMEC pooled weight + cycle-nested strata/PSU,Measured weight from temporal-validation source files: weight_kg
+4,ALM/weight Definition 1,low_weight_def1,100 x ALM / weight,Men <25.7%; women <19.4%,"NHANES 2011-2018, age 18-59",WTMEC pooled weight + cycle-nested strata/PSU,Measured weight from temporal-validation source files: weight_kg
+5,ALM/weight Definition 2,low_weight_def2,100 x ALM / weight,Men <28.27%; women <23.47%,"NHANES 2011-2018, age 18-59",WTMEC pooled weight + cycle-nested strata/PSU,Measured weight from temporal-validation source files: weight_kg

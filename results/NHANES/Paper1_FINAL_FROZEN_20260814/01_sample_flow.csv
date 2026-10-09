@@ -1,0 +1,75 @@
+analysis_component,population,sex,comparison,model,stage,unweighted_n,notes,weight_version
+Primary H development,NHANES 1999-2006; age 18-69,Female,NA,Corrected-weight H,Reference eligible,7946,Eligibility before valid ALM,Corrected/final unless explicitly stated
+Primary H development,NHANES 1999-2006; age 18-69,Male,NA,Corrected-weight H,Reference eligible,8204,Eligibility before valid ALM,Corrected/final unless explicitly stated
+Primary H development,NHANES 1999-2006; age 18-69,Female,NA,Corrected-weight H,Valid ALM/reference model,7890,Five completed data sets; n shown per completed set,Corrected/final unless explicitly stated
+Primary H development,NHANES 1999-2006; age 18-69,Male,NA,Corrected-weight H,Valid ALM/reference model,8128,Five completed data sets; n shown per completed set,Corrected/final unless explicitly stated
+Primary H temporal validation,NHANES 2011-2018; age 18-59,Female,NA,Corrected-weight H,Valid DXA and H score,5939,Validation weights were already WTMEC2YR/4,Corrected/final unless explicitly stated
+Primary H temporal validation,NHANES 2011-2018; age 18-59,Male,NA,Corrected-weight H,Valid DXA and H score,5857,Validation weights were already WTMEC2YR/4,Corrected/final unless explicitly stated
+Full-sample grip,NHANES 2011-2014; age 18-59,Both,EWGSOP2,M1,neither_n,5419,Model analysis n=6048,Corrected/final unless explicitly stated
+Full-sample grip,NHANES 2011-2014; age 18-59,Both,EWGSOP2,M1,conventional_only_n,335.8,Model analysis n=6048,Corrected/final unless explicitly stated
+Full-sample grip,NHANES 2011-2014; age 18-59,Both,EWGSOP2,M1,conditional_only_n,0,Model analysis n=6048,Corrected/final unless explicitly stated
+Full-sample grip,NHANES 2011-2014; age 18-59,Both,EWGSOP2,M1,both_n,293.2,Model analysis n=6048,Corrected/final unless explicitly stated
+Full-sample grip,NHANES 2011-2014; age 18-59,Both,EWGSOP2,M2,neither_n,5416,Model analysis n=6045,Corrected/final unless explicitly stated
+Full-sample grip,NHANES 2011-2014; age 18-59,Both,EWGSOP2,M2,conventional_only_n,335.8,Model analysis n=6045,Corrected/final unless explicitly stated
+Full-sample grip,NHANES 2011-2014; age 18-59,Both,EWGSOP2,M2,conditional_only_n,0,Model analysis n=6045,Corrected/final unless explicitly stated
+Full-sample grip,NHANES 2011-2014; age 18-59,Both,EWGSOP2,M2,both_n,293.2,Model analysis n=6045,Corrected/final unless explicitly stated
+Full-sample grip,NHANES 2011-2014; age 18-59,Both,EWGSOP2,M3,neither_n,5369,Model analysis n=5992,Corrected/final unless explicitly stated
+Full-sample grip,NHANES 2011-2014; age 18-59,Both,EWGSOP2,M3,conventional_only_n,331.8,Model analysis n=5992,Corrected/final unless explicitly stated
+Full-sample grip,NHANES 2011-2014; age 18-59,Both,EWGSOP2,M3,conditional_only_n,0,Model analysis n=5992,Corrected/final unless explicitly stated
+Full-sample grip,NHANES 2011-2014; age 18-59,Both,EWGSOP2,M3,both_n,291.2,Model analysis n=5992,Corrected/final unless explicitly stated
+Full-sample grip,NHANES 2011-2014; age 18-59,Both,EWGSOP2,Raw,neither_n,5419,Model analysis n=6048,Corrected/final unless explicitly stated
+Full-sample grip,NHANES 2011-2014; age 18-59,Both,EWGSOP2,Raw,conventional_only_n,335.8,Model analysis n=6048,Corrected/final unless explicitly stated
+Full-sample grip,NHANES 2011-2014; age 18-59,Both,EWGSOP2,Raw,conditional_only_n,0,Model analysis n=6048,Corrected/final unless explicitly stated
+Full-sample grip,NHANES 2011-2014; age 18-59,Both,EWGSOP2,Raw,both_n,293.2,Model analysis n=6048,Corrected/final unless explicitly stated
+Full-sample grip,NHANES 2011-2014; age 18-59,Both,FNIH,M1,neither_n,5353.8,Model analysis n=6045,Corrected/final unless explicitly stated
+Full-sample grip,NHANES 2011-2014; age 18-59,Both,FNIH,M1,conventional_only_n,398,Model analysis n=6045,Corrected/final unless explicitly stated
+Full-sample grip,NHANES 2011-2014; age 18-59,Both,FNIH,M1,conditional_only_n,265.2,Model analysis n=6045,Corrected/final unless explicitly stated
+Full-sample grip,NHANES 2011-2014; age 18-59,Both,FNIH,M1,both_n,28,Model analysis n=6045,Corrected/final unless explicitly stated
+Full-sample grip,NHANES 2011-2014; age 18-59,Both,FNIH,M2,neither_n,5353.8,Model analysis n=6045,Corrected/final unless explicitly stated
+Full-sample grip,NHANES 2011-2014; age 18-59,Both,FNIH,M2,conventional_only_n,398,Model analysis n=6045,Corrected/final unless explicitly stated
+Full-sample grip,NHANES 2011-2014; age 18-59,Both,FNIH,M2,conditional_only_n,265.2,Model analysis n=6045,Corrected/final unless explicitly stated
+Full-sample grip,NHANES 2011-2014; age 18-59,Both,FNIH,M2,both_n,28,Model analysis n=6045,Corrected/final unless explicitly stated
+Full-sample grip,NHANES 2011-2014; age 18-59,Both,FNIH,M3,neither_n,5305.8,Model analysis n=5992,Corrected/final unless explicitly stated
+Full-sample grip,NHANES 2011-2014; age 18-59,Both,FNIH,M3,conventional_only_n,395,Model analysis n=5992,Corrected/final unless explicitly stated
+Full-sample grip,NHANES 2011-2014; age 18-59,Both,FNIH,M3,conditional_only_n,263.2,Model analysis n=5992,Corrected/final unless explicitly stated
+Full-sample grip,NHANES 2011-2014; age 18-59,Both,FNIH,M3,both_n,28,Model analysis n=5992,Corrected/final unless explicitly stated
+Full-sample grip,NHANES 2011-2014; age 18-59,Both,FNIH,Raw,neither_n,5353.8,Model analysis n=6045,Corrected/final unless explicitly stated
+Full-sample grip,NHANES 2011-2014; age 18-59,Both,FNIH,Raw,conventional_only_n,398,Model analysis n=6045,Corrected/final unless explicitly stated
+Full-sample grip,NHANES 2011-2014; age 18-59,Both,FNIH,Raw,conditional_only_n,265.2,Model analysis n=6045,Corrected/final unless explicitly stated
+Full-sample grip,NHANES 2011-2014; age 18-59,Both,FNIH,Raw,both_n,28,Model analysis n=6045,Corrected/final unless explicitly stated
+Normal-BMI grip sensitivity,NHANES 2011-2014; age 18-59,Both,EWGSOP2,M1,neither_n,1501,Model analysis n=1982,Corrected/final unless explicitly stated
+Normal-BMI grip sensitivity,NHANES 2011-2014; age 18-59,Both,EWGSOP2,M1,conventional_only_n,283,Model analysis n=1982,Corrected/final unless explicitly stated
+Normal-BMI grip sensitivity,NHANES 2011-2014; age 18-59,Both,EWGSOP2,M1,conditional_only_n,0,Model analysis n=1982,Corrected/final unless explicitly stated
+Normal-BMI grip sensitivity,NHANES 2011-2014; age 18-59,Both,EWGSOP2,M1,both_n,198,Model analysis n=1982,Corrected/final unless explicitly stated
+Normal-BMI grip sensitivity,NHANES 2011-2014; age 18-59,Both,EWGSOP2,M2,neither_n,1501,Model analysis n=1982,Corrected/final unless explicitly stated
+Normal-BMI grip sensitivity,NHANES 2011-2014; age 18-59,Both,EWGSOP2,M2,conventional_only_n,283,Model analysis n=1982,Corrected/final unless explicitly stated
+Normal-BMI grip sensitivity,NHANES 2011-2014; age 18-59,Both,EWGSOP2,M2,conditional_only_n,0,Model analysis n=1982,Corrected/final unless explicitly stated
+Normal-BMI grip sensitivity,NHANES 2011-2014; age 18-59,Both,EWGSOP2,M2,both_n,198,Model analysis n=1982,Corrected/final unless explicitly stated
+Normal-BMI grip sensitivity,NHANES 2011-2014; age 18-59,Both,EWGSOP2,M3,neither_n,1493,Model analysis n=1970,Corrected/final unless explicitly stated
+Normal-BMI grip sensitivity,NHANES 2011-2014; age 18-59,Both,EWGSOP2,M3,conventional_only_n,280,Model analysis n=1970,Corrected/final unless explicitly stated
+Normal-BMI grip sensitivity,NHANES 2011-2014; age 18-59,Both,EWGSOP2,M3,conditional_only_n,0,Model analysis n=1970,Corrected/final unless explicitly stated
+Normal-BMI grip sensitivity,NHANES 2011-2014; age 18-59,Both,EWGSOP2,M3,both_n,197,Model analysis n=1970,Corrected/final unless explicitly stated
+Normal-BMI grip sensitivity,NHANES 2011-2014; age 18-59,Both,EWGSOP2,Raw,neither_n,1501,Model analysis n=1982,Corrected/final unless explicitly stated
+Normal-BMI grip sensitivity,NHANES 2011-2014; age 18-59,Both,EWGSOP2,Raw,conventional_only_n,283,Model analysis n=1982,Corrected/final unless explicitly stated
+Normal-BMI grip sensitivity,NHANES 2011-2014; age 18-59,Both,EWGSOP2,Raw,conditional_only_n,0,Model analysis n=1982,Corrected/final unless explicitly stated
+Normal-BMI grip sensitivity,NHANES 2011-2014; age 18-59,Both,EWGSOP2,Raw,both_n,198,Model analysis n=1982,Corrected/final unless explicitly stated
+Normal-BMI grip sensitivity,NHANES 2011-2014; age 18-59,Both,FNIH,M1,neither_n,1766.8,Model analysis n=1982,Corrected/final unless explicitly stated
+Normal-BMI grip sensitivity,NHANES 2011-2014; age 18-59,Both,FNIH,M1,conventional_only_n,17.2,Model analysis n=1982,Corrected/final unless explicitly stated
+Normal-BMI grip sensitivity,NHANES 2011-2014; age 18-59,Both,FNIH,M1,conditional_only_n,177.2,Model analysis n=1982,Corrected/final unless explicitly stated
+Normal-BMI grip sensitivity,NHANES 2011-2014; age 18-59,Both,FNIH,M1,both_n,20.8,Model analysis n=1982,Corrected/final unless explicitly stated
+Normal-BMI grip sensitivity,NHANES 2011-2014; age 18-59,Both,FNIH,M2,neither_n,1766.8,Model analysis n=1982,Corrected/final unless explicitly stated
+Normal-BMI grip sensitivity,NHANES 2011-2014; age 18-59,Both,FNIH,M2,conventional_only_n,17.2,Model analysis n=1982,Corrected/final unless explicitly stated
+Normal-BMI grip sensitivity,NHANES 2011-2014; age 18-59,Both,FNIH,M2,conditional_only_n,177.2,Model analysis n=1982,Corrected/final unless explicitly stated
+Normal-BMI grip sensitivity,NHANES 2011-2014; age 18-59,Both,FNIH,M2,both_n,20.8,Model analysis n=1982,Corrected/final unless explicitly stated
+Normal-BMI grip sensitivity,NHANES 2011-2014; age 18-59,Both,FNIH,M3,neither_n,1756.8,Model analysis n=1970,Corrected/final unless explicitly stated
+Normal-BMI grip sensitivity,NHANES 2011-2014; age 18-59,Both,FNIH,M3,conventional_only_n,16.2,Model analysis n=1970,Corrected/final unless explicitly stated
+Normal-BMI grip sensitivity,NHANES 2011-2014; age 18-59,Both,FNIH,M3,conditional_only_n,176.2,Model analysis n=1970,Corrected/final unless explicitly stated
+Normal-BMI grip sensitivity,NHANES 2011-2014; age 18-59,Both,FNIH,M3,both_n,20.8,Model analysis n=1970,Corrected/final unless explicitly stated
+Normal-BMI grip sensitivity,NHANES 2011-2014; age 18-59,Both,FNIH,Raw,neither_n,1766.8,Model analysis n=1982,Corrected/final unless explicitly stated
+Normal-BMI grip sensitivity,NHANES 2011-2014; age 18-59,Both,FNIH,Raw,conventional_only_n,17.2,Model analysis n=1982,Corrected/final unless explicitly stated
+Normal-BMI grip sensitivity,NHANES 2011-2014; age 18-59,Both,FNIH,Raw,conditional_only_n,177.2,Model analysis n=1982,Corrected/final unless explicitly stated
+Normal-BMI grip sensitivity,NHANES 2011-2014; age 18-59,Both,FNIH,Raw,both_n,20.8,Model analysis n=1982,Corrected/final unless explicitly stated
+Frozen H/HB temporal comparison,NHANES 2011-2018; age 18-59; BMI-complete,Female,H-common vs HB,HB,Scored before common-valid restriction,5937,Outside observed predictor support: 1; invalid predictions: 0,Corrected/final unless explicitly stated
+Frozen H/HB temporal comparison,NHANES 2011-2018; age 18-59; BMI-complete,Female,H-common vs HB,Hcommon,Scored before common-valid restriction,5937,Outside observed predictor support: 1; invalid predictions: 0,Corrected/final unless explicitly stated
+Frozen H/HB temporal comparison,NHANES 2011-2018; age 18-59; BMI-complete,Male,H-common vs HB,HB,Scored before common-valid restriction,5855,Outside observed predictor support: 1; invalid predictions: 2.8,Corrected/final unless explicitly stated
+Frozen H/HB temporal comparison,NHANES 2011-2018; age 18-59; BMI-complete,Male,H-common vs HB,Hcommon,Scored before common-valid restriction,5855,Outside observed predictor support: 1; invalid predictions: 0,Corrected/final unless explicitly stated

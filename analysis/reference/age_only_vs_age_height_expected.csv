@@ -1,0 +1,13 @@
+sex,metric,age_only,age_height,unit_or_note
+Women,Summed BIC,214369.6,206456.8,sum across five completed DXA datasets
+Women,Continuous z beta per 10 cm,0.644,0.018,z units per 10 cm
+Women,P5 odds ratio per 10 cm,0.171,0.619,odds ratio
+Women,P10 odds ratio per 10 cm,0.166,0.895,odds ratio
+Women,P5 reclassification,2.80,,percent assigned differently
+Women,P10 reclassification,6.33,,percent assigned differently
+Men,Summed BIC,241889.8,227020.7,sum across five completed DXA datasets
+Men,Continuous z beta per 10 cm,0.708,-0.052,z units per 10 cm
+Men,P5 odds ratio per 10 cm,0.163,1.014,odds ratio
+Men,P10 odds ratio per 10 cm,0.190,1.047,odds ratio
+Men,P5 reclassification,4.42,,percent assigned differently
+Men,P10 reclassification,7.73,,percent assigned differently

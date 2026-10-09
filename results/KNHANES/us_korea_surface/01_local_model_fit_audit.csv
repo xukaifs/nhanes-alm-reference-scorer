@@ -1,0 +1,3 @@
+"sex","family","mu_formula","sigma_formula","nu_formula","tau_formula","n","weight_mean","converged","iterations","effective_df","global_deviance","AIC","BIC","fit_attempt"
+"Female","BCCG","alm_kg ~ pb(age, df=3, inter=10) + pb(height_m, df=3, inter=10)","~1","~1","~1",9240,1,TRUE,6,11.0000000306437,36534.2510516802,36556.2510517415,36634.695320771,1
+"Male","BCT","alm_kg ~ pb(age, df=3) + pb(height_m, df=3)","~1","~1","~1",6986,1,TRUE,11,12.0003008294837,32586.6698304739,32610.6704321329,32692.8924544197,1

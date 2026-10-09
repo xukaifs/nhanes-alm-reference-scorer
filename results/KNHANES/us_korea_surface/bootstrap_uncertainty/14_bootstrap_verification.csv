@@ -1,0 +1,7 @@
+"check","status","detail"
+"Requested replicate count","PASS","500/500"
+"Fit success rate >=95%","PASS","Female 100.0%; Male 98.6%"
+"All nine metrics finite","PASS","1986 metric rows"
+"Every CI ordered and contains finite endpoints","PASS","36 intervals"
+"Point estimates match locked surface summary","PASS","maximum direct-vs-locked difference=3.872458e-13"
+"Representative P50 bands complete","PASS","306 age-height band rows"
